@@ -8,7 +8,8 @@ def welcome():
             [gui.Button("Resources", key="Resources Button")], 
             [gui.Button("Get Involved", key="Get Involved Button")],
             [gui.Button("About", key="About Button")], 
-            [gui.Button("Sources", key="Sources Button")]]
+            [gui.Button("Sources", key="Sources Button")]],
+        
   return layout
   
 def resources():
