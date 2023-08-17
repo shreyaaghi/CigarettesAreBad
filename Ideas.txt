@@ -1,0 +1,44 @@
+-app to warn people about tobacco dangers
+  + breaks down what's inside a cigarette and a vape (this could be through an interactive diagram) and explains its role and dangers in smoking
+  + could have quizzes/games to review information about the information above
+  + can give resources for assistance & people to reach out to, info on what to do in certain situations
+  + provide useful links & places where people can get involved with their communtities and help with tobacco control
+
+Technology:
+- Python3
+- Tkinter / PySimpleGUI
+
+Screens:
+- Home
+- Cigarette breakdown
+- Quizzes/games
+- Get Involved
+- Resources
+- About page? (brief explanation of why this matters and the rising importance of the issue)
+
+Basic Functionality
+- Information about Cigarettes (file or dictionary or list)
+  - What's inside Cig/Vape
+  - Physical harm to individual
+  - Why its dangerous
+  - Difference between Cig/Vape
+  - images/diagrams of cigarette, vape, compounds (graphs?)
+  - talk about diseases/health issues associated
+- Different Quizzes 
+- Links to Resources (json file)
+- Links to Getting Involved (json file)
+- About page 
+
+
+
+% https://projecteuler.net/archives
+% https://codingbat.com/python
+
+HW Through July:
+- Do at least 3 quizzes for now
+- Write the information of cigarettes and vapes into a file/dictionary/list
+
+About: My name is Shreya Aghi, and I am an 8th grader in San Francisco. Earlier this year, I joined a local organization known as BACR which specializes in multiple community issues. One that specifically stood out to me is tobacco control. It’s a common fact that using tobacco products (such as cigarettes and vapes) is dangerous, but people often don’t know that tobacco use is the number 1 leading cause of preventable deaths in the United States. Additionally, most people suffering from tobacco addiction want to quit but don’t know and/or don’t have the resources to do that. The first step to tobacco cessation is understanding it’s importance and how it can be done, which is why I created (insert app name). (Insert app name) helps users learn about what tobacco is, the importance of eliminating it in communities, the health risks & dangers associated with it, and helps answer any questions one may have about tobacco control. Additionally, there are organizations and resources linked that further specialize in helping people quit or different initiatives to get involved. You can be apart of the solution, and it starts by opening the app.
+
+
+
