@@ -3,51 +3,49 @@
     {
       "name": "American Cancer Society",
       "description": "866-784-8454 (avaliable 24 hours a day, 7 days a week (with exception to national holidays)",
-      "link": "https://www.quitnow.net/mve/quitnow",
+      "link": "https://www.quitnow.net/mve/quitnow"
     },
     {
       "name": "American Lung Association",
       "description": "800-586-4872",
-      "link": "https://www.lung.org/help-support/lung-helpline-and-tobacco-quitline",
+      "link": "https://www.lung.org/help-support/lung-helpline-and-tobacco-quitline"
     },
     {
       "name": "National Cancer Institute",
       "description": "877-448-7848 (avaliable 8 AM to 8 PM ET, Monday through Friday) + Live online chat assistance available 8 AM to 11 PM ET, Monday through Friday",
-      "link": "https://smokefree.gov/",
+      "link": "https://smokefree.gov/"
     },
     {
       "name": "U.S. Department of Health and Human Services",
       "description": "800-784-8669",
-      "link": "https://betobaccofree.hhs.gov/quit-now/index.html",
-    },
+      "link": "https://betobaccofree.hhs.gov/quit-now/index.html"
+    }
   ],
   "contacts": [
     {
       "name": "World Health Organization (WHO) - Tobacco Free Initiative",
       "link": "https://www.who.int/tobacco/en/",
-      "description": "The WHO's Tobacco Free Initiative is one of the leading global organizations dedicated to reducing tobacco use and the dangers with it. They offer multiple resources and campaigns to help promote tobacco control",
+      "description": "The WHO's Tobacco Free Initiative is one of the leading global organizations dedicated to reducing tobacco use and the dangers with it. They offer multiple resources and campaigns to help promote tobacco control"
     },
     {
       "name": "Centers for Disease Control and Prevention (CDC) - Office on Smoking and Health (OSH)",
     "link": "https://www.cdc.gov/tobacco/index.htm",
-    "description": "The CDC's Office on Smoking and Health (OSH) focuses on researching, educating, and developing policies in relation to tobacco control within the United States. They provide information on quitting smoking, tobacco-related data, and resources for getting involved in tobacco control initiatives",
+    "description": "The CDC's Office on Smoking and Health (OSH) focuses on researching, educating, and developing policies in relation to tobacco control within the United States. They provide information on quitting smoking, tobacco-related data, and resources for getting involved in tobacco control initiatives"
     },
     {
       "name": "Campaign for Tobacco-Free Kids",
       "link": "https://www.tobaccofreekids.org/",
-      "description": "The Campaign for Tobacco-Free Kids is dedicated to reducing tobacco use specifically among youth populations and advocating for the implementation of tobacco control policies worldwide. They work on various campaigns and initiatives to promote tobacco control",
+      "description": "The Campaign for Tobacco-Free Kids is dedicated to reducing tobacco use specifically among youth populations and advocating for the implementation of tobacco control policies worldwide. They work on various campaigns and initiatives to promote tobacco control"
     },
     {
       "name": "American Cancer Society - Tobacco and Cancer",
       "link": "https://www.cancer.org/cancer/cancer-causes/tobacco-and-cancer.html",
-      "description": "The American Cancer Society (ACS) offers resources and information on the relationship between tobacco use and cancer. They advocate for tobacco control policies and support tobacco cessation efforts",
+      "description": "The American Cancer Society (ACS) offers resources and information on the relationship between tobacco use and cancer. They advocate for tobacco control policies and support tobacco cessation efforts"
     },
     {
       "name": "Action on Smoking and Health (ASH)",
       "link": "https://ash.org/",
       "description": "ASH is a nonprofit organization that focuses on eliminating the harm caused by tobacco use. They work to influence public policy, promote smoke-free environments, and support evidence-based tobacco control measures"
-
-
     }
   ]
 }

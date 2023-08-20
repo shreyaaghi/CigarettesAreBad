@@ -1,5 +1,6 @@
 from ui import ui
-# import challenge
-
 ui()
 
+# from util import get_resources
+
+# print(get_resources()['contacts'])
