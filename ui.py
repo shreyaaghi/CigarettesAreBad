@@ -26,7 +26,7 @@ def ui():
       gui.Column(welcome(), key = "welcome screen"), 
       gui.Column(resources_ui(), scrollable=True, visible = False,  key = "resources screen", size=size),
       gui.Column(quizzes_ui(), scrollable=False, visible = False, key = "quizzes screen", element_justification="c"),
-      gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="c", size=size) # TODO Add scrollable back?
+      gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="c", size=(935,667)) # TODO Add scrollable back?
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
