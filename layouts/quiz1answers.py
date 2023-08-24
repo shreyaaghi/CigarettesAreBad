@@ -62,18 +62,16 @@ def quiz1Answers():
   return layout
   
 def checkAnswers(window, evt, vals):
-  print("Check answers called")
   correct = 0
   incorrect = 0
   answers = getAnswers()
+  labels = [val for val in vals if isinstance(val, str)]
   if vals["q1.1.d"]:
     correct += 1
     window["q1.1.userchoice"].update("D: All of the Above")
   else:
     incorrect += 1
     answerText = ""
-    
-    labels = [val for val in vals if isinstance(val, str)]
     for val in labels:
       if "q1.1" in val:
         if vals[val] == True:
