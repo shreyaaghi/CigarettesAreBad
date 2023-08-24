@@ -23,8 +23,8 @@ def quiz1():
     [gui.Text(" ")],
   # question 3
     [gui.Text("3. True or False: Vaping products are completely safe for non-smokers and have no health risks.")],
-    [radio("True", "group3", "q1.3.a")],
-    [radio("False", "group3", "q1.3.b")],
+    [radio("A: True", "group3", "q1.3.a")],
+    [radio("B: False", "group3", "q1.3.b")],
     [gui.Text(" ")],
   # question 4
     [gui.Text("4. Which age group is most vulnerable to nicotine addiction from smoking or vaping?")],
@@ -42,8 +42,8 @@ def quiz1():
     [gui.Text(" ")],
   # question 6
     [gui.Text("6. True or False: Quitting smoking/vaping can lead to immediate health benefits (improved lung function, reduced heart disease risk, etc.)")],
-    [radio("True", "group6", "q1.6.a")],
-    [radio("False", "group6", "q1.6.b")],
+    [radio("A: True", "group6", "q1.6.a")],
+    [radio("B: False", "group6", "q1.6.b")],
     [gui.Text(" ")],
   # question 7
     [gui.Text("7. What is the approximate percentage of deaths in the U.S. caused by smoking-related illnesses each year?")],
@@ -72,12 +72,9 @@ def quiz1():
     [radio("D: Formaldehyde", "group10", "q1.10.d")],
     [gui.Text(" ")],
   # submit button
-    [gui.Button("Submit", key="Submit Button")]
+    [gui.Button("Submit", key="Submit Button 1")]
   ]
   return layout
-
-def checkAnswers(vals):
-  pass
 
 def handleQuiz1(evt, vals): # When should the check for answers occur?
 # question 1
