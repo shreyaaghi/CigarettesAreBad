@@ -4,13 +4,14 @@ import webbrowser
 from layouts.welcome import welcome
 from layouts.resources import resources_ui
 from layouts.quizzes import quizzes_ui
+from layouts.quiz1 import quiz1, handleQuiz1
 
 font = ("Helvetica", 25)
 size = (500, 667)
 
 
 def cycleLayout(window, activeLayout):
-  screens = ["welcome screen", "resources screen", "quizzes screen"]
+  screens = ["welcome screen", "resources screen", "quizzes screen", "quiz1 screen"]
   window[activeLayout].update(visible = True)
   for screen in screens:
     if screen == activeLayout:
@@ -24,7 +25,8 @@ def ui():
     [
       gui.Column(welcome(), key = "welcome screen"), 
       gui.Column(resources_ui(), scrollable=True, visible = False,  key = "resources screen", size=size),
-      gui.Column(quizzes_ui(), scrollable=False, visible = False, key = "quizzes screen")
+      gui.Column(quizzes_ui(), scrollable=False, visible = False, key = "quizzes screen", element_justification="c"),
+      gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="c", size=size) # TODO Add scrollable back?
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
@@ -44,8 +46,12 @@ def ui():
       print("About Button Pressed")
     if evt == "Sources Button":
       print("Sources Button Pressed")
-    if "Back Button" in evt: # changed from evt == "Back Button"
+    if "Back Button" in evt: 
       cycleLayout(window, "welcome screen")
       print("Back Button Pressed")
+    if evt == "Quiz 1 Button":
+      cycleLayout(window, "quiz1 screen")
+      print("Quiz 1 Button Pressed")
+    handleQuiz1(evt, vals)
     
   window.close()
