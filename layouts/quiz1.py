@@ -31,7 +31,7 @@ def quiz1():
     [radio("A: Seniors", "group4", "q1.4.a")],
     [radio("B: Middle-aged individuals", "group4", "q1.4.b")],
     [radio("C: Adolescents and young adults", "group4", "q1.4.c")],
-    [radio("Children under 5", "group4", "q1.4.d")],
+    [radio("D: Children under 5", "group4", "q1.4.d")],
     [gui.Text(" ")],
   # question 5
     [gui.Text("5. What is the main difference between smoking and vaping?")],

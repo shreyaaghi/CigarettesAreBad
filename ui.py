@@ -21,7 +21,7 @@ def cycleLayout(window, activeLayout):
   
 
 def ui():
-  gui.theme("LightBlue")
+  gui.theme("LightBrown10")
   layout = [
     [
       gui.Column(welcome(), key = "welcome screen"), 
