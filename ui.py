@@ -12,6 +12,7 @@ font = ("Helvetica", 25)
 size = (500, 667)
 
 
+
 def cycleLayout(window, activeLayout):
   screens = ["welcome screen", "resources screen", "quizzes screen", "quiz1 screen", "answer screen 1", "about screen"]
   window[activeLayout].update(visible = True)
