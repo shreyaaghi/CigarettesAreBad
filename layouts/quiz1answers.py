@@ -58,52 +58,52 @@ def quiz1Answers():
   # question 1
     [gui.Text("Which of these bodily organs are affected by tobacco use over time?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.1.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.1.answer")],
+    [gui.Text("The answer was -->", key="q1.1.key"), gui.Text("", key="q1.1.answer")],
     [gui.Text(" ")],
   # question 2
     [gui.Text("Which of the following substances is found in cigarettes and is known to be harmful to health?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.2.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.2.answer")],
+    [gui.Text("The answer was -->", key="q1.2.key"), gui.Text("", key="q1.2.answer")],
     [gui.Text(" ")],
   # question 3
     [gui.Text("True or False: Vaping products are completely safe for non-smokers and have no health risks.")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.3.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.3.answer")],
+    [gui.Text("The answer was -->", key="q1.3.key"), gui.Text("", key="q1.3.answer")],
     [gui.Text(" ")],
   # question 4
     [gui.Text("Which age group is most vulnerable to nicotine addiction from smoking or vaping?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.4.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.4.answer")],
+    [gui.Text("The answer was -->", key="q1.4.key"), gui.Text("", key="q1.4.answer")],
     [gui.Text(" ")],
    # question 5
     [gui.Text("What is the main difference between smoking and vaping?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.5.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.5.answer")],
+    [gui.Text("The answer was -->", key="q1.5.key"), gui.Text("", key="q1.5.answer")],
     [gui.Text(" ")],
   # question 6
     [gui.Text("True or False: Quitting smoking/vaping can lead to immediate health benefits (improved lung function, reduced heart disease risk, etc.)")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.6.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.6.answer")],
+    [gui.Text("The answer was -->", key="q1.6.key"), gui.Text("", key="q1.6.answer")],
     [gui.Text(" ")],
    # question 7
     [gui.Text("What is the approximate percentage of deaths in the U.S. caused by smoking related illnesses each year?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.7.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.7.answer")],
+    [gui.Text("The answer was -->", key="q1.7.key"), gui.Text("", key="q1.7.answer")],
     [gui.Text(" ")],
   # question 8
     [gui.Text("CHALLENGE: Which of the following resipiratory conditions has been linked to long-term smoking/vaping?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.8.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.8.answer")],
+    [gui.Text("The answer was -->", key="q1.8.key"), gui.Text("", key="q1.8.answer")],
     [gui.Text(" ")],
   # question 9
     [gui.Text("True or False: Smoking increases the risk of developing lung cancer, but it has no significant impact on heart health.")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.9.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.9.answer")],
+    [gui.Text("The answer was -->", key="q1.9.key"), gui.Text("", key="q1.9.answer")],
     [gui.Text(" ")],
   # question 10
     [gui.Text("CHALLENGE: Which harmful chemical, found in both cigarettes and e-cigarettes, is known to increase the risk of heart diseases?")],
     [gui.Text("You chose -->"), gui.Text("", key="q1.10.userchoice")],
-    [gui.Text("The answer was -->"), gui.Text("", key="q1.10.answer")],
+    [gui.Text("The answer was -->", key="q1.10.key"), gui.Text("", key="q1.10.answer")],
     [gui.Text(" ")]
   ]
   return layout
@@ -117,6 +117,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.1.d"]:
     correct += 1
     window["q1.1.userchoice"].update("D: All of the Above")
+    window["q1.1.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -131,6 +132,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.2.b"]:
     correct += 1
     window["q1.2.userchoice"].update("B: Nicotine")
+    window["q1.2.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -145,6 +147,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.3.b"]:
     correct += 1
     window["q1.3.userchoice"].update("B: False")
+    window["q1.3.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -159,6 +162,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.4.c"]:
     correct += 1
     window["q1.4.userchoice"].update("C: Adolescents and young adults")
+    window["q1.4.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -173,6 +177,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.5.a"]:
     correct += 1
     window["q1.5.userchoice"].update("A: Vaping involves inhaling nicotine, while smoking involves inhaling tar")
+    window["q1.5.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -187,6 +192,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.6.a"]:
     correct += 1
     window["q1.6.userchoice"].update("A: True")
+    window["q1.6.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -201,6 +207,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.7.b"]:
     correct += 1
     window["q1.7.userchoice"].update("B: 20%")
+    window["q1.7.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -215,6 +222,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.8.a"]:
     correct += 1
     window["q1.8.userchoice"].update("A: Asthma")
+    window["q1.8.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -229,6 +237,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.9.a"]:
     correct += 1
     window["q1.9.userchoice"].update("B: False")
+    window["q1.9.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
@@ -243,6 +252,7 @@ def checkAnswers(window, evt, vals):
   if vals["q1.10.d"]:
     correct += 1
     window["q1.10.userchoice"].update("D: Formaldehyde")
+    window["q1.10.key"].update(visible = False)
   else:
     incorrect += 1
     answerText = ""
