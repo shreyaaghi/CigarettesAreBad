@@ -7,9 +7,10 @@ from layouts.quizzes import quizzes_ui
 from layouts.quiz1 import quiz1, handleQuiz1
 from layouts.quiz1answers import quiz1Answers, checkQuiz1
 from layouts.about import about
+from layouts.information import information
 
 font = ("Helvetica", 25)
-size = (500, 667)
+size = (2560, 1600)
 
 
 
@@ -29,9 +30,10 @@ def ui():
       gui.Column(welcome(), key = "welcome screen"), 
       gui.Column(resources_ui(), scrollable=True, visible = False,  key = "resources screen", size=size),
       gui.Column(quizzes_ui(), scrollable=False, visible = False, key = "quizzes screen", element_justification="c"),
-      gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="c", size=(935,667)), # TODO Add scrollable back?
-      gui.Column(quiz1Answers(), scrollable=True, visible = False, key = "answer screen 1", element_justification="c", size=(935,667)),
-      gui.Column(about(), key="about screen", visible=False)
+      gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="c", size=(2560,1600)), # TODO Add scrollable back?
+      gui.Column(quiz1Answers(), scrollable=True, visible = False, key = "answer screen 1", element_justification="c", size=(2560,1600)),
+      gui.Column(about(), key="about screen", visible=False),
+      gui.Column(information(), key="information screen", scrollable=True, visible=False, element_justification="c", size=(2560,1600))
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
@@ -40,6 +42,7 @@ def ui():
     if evt == gui.WIN_CLOSED:
       break
     if evt == "Information Button":
+      cycleLayout(window, "information screen")
       print("Info Button Pressed")
     if evt == "Quizzes Button":
       cycleLayout(window, "quizzes screen")
