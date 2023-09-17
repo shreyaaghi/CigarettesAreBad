@@ -1,3 +1,7 @@
+from PIL import Image
+import PySimpleGUI as gui
+import io
+import os
 import json
 def read(filename):
   contents = []
@@ -20,3 +24,15 @@ def get_config():
   with open("layouts/config.json") as f:
     config = json.load(f)
   return config
+
+def load_image(path, window, key, size=(100,100)):
+    try:
+        img = Image.open(path)
+        img.thumbnail(size)
+        image_byte = io.BytesIO()
+        img.save(image_byte, format='PNG')
+        image_byte = image_byte.getvalue()
+        window[key].update(data=image_byte)
+        return image_byte
+    except:
+        print(f"Unable to open {path}!")

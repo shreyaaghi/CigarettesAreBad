@@ -9,7 +9,7 @@ from layouts.quiz1answers import quiz1Answers, checkQuiz1
 from layouts.about import about
 from layouts.information import information
 
-from util import get_config
+from util import get_config, load_image
 
 config = get_config()
 
@@ -29,6 +29,7 @@ def cycleLayout(window, activeLayout):
 
 def ui():
   gui.theme("LightBrown10")
+  
   layout = [
     [
       gui.Column(welcome(), key = "welcome screen"), 
@@ -73,5 +74,15 @@ def ui():
       print(evt)
       webbrowser.open(evt.split(": ")[-1])
     handleQuiz1(evt, vals)
+    load_image("images/refusal.png", window, "img")
+    if evt == "Next Image":
+      """
+        TODO
+        Take the next image from your list of images, feed that into 
+        load_image with the key being the key of the carousel.
+        For example;
+          load_image(images[next_image], window, "carousel")
+        Where images is a list of image sources, next_image is the index of the next image, and carousel is the key of the image carousel, look at the load_image on line 77.
+      """
     
   window.close()
