@@ -13,3 +13,10 @@ def get_resources():
   with open("links/resources.json") as f:
     resources = json.load(f)
   return resources
+
+
+def get_config():
+  config = {}
+  with open("layouts/config.json") as f:
+    config = json.load(f)
+  return config
