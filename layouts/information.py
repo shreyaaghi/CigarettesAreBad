@@ -10,10 +10,10 @@ config = get_config()
 width, height = config['width'], config['height']
 
 def information():
-    font = {"Helvetica", 25}
+    font = {"Helvetica", 30}
     layout = [
-        [gui.Button("Back", key="Information Back Button"), gui.Text("Information", font={"Helvetica",25})],
-        [gui.Multiline("According to the National Cancer Institute, over 90% of daily adult cigarette smokers began smoking before the age of 18. This striking statistic highlights a deeply concerning trend: smoking among teenagers. What might seem like a harmless experiment or a brief habit can have extreme consequences for both health and well-being. By the time young adults are introduced to smoking, it can be too late. The best way to prevent the road down to addiction is to learn about it at an earlier age. In this section, we'll dive into the world of tobacco use among teenagers by exploring the factors that contribute to this behavior and the risks that come with it. By gaining insight into the reasons behind these choices and the potential impact on young lives, the goal is to help both teenagers and those who care about them to make informed decisions.", key="introText", write_only = True, font={"Helvetica",13}, size = (width//20, 20)), gui.Image(key="img")], # TODO Set the size of multline. It technically already works?
-        [gui.Text("What is a Cigarette?", font={"Helvetica",13, "bold"})]
+        [gui.Button("Back", key="Information Back Button"), gui.Text("Information", font=font)],
+        [gui.Multiline("The National Cancer Institute reports that over 90% of adult smokers started before age 18, emphasizing the alarming issue of teenage smoking. Experimenting with cigarettes can lead to severe health consequences. To prevent addiction, it's crucial to educate young people early about the risks and factors contributing to teen tobacco use. This section explores these aspects, aiming to empower both teenagers and their caregivers to make informed choices.", key="introText", write_only = True, font=font, disabled=True, size = (width//20, 12)), gui.Image(key="img")],
+        [gui.Text("What is a Cigarette?", font=font), gui.Image(key="carousel1")]
     ]
     return layout

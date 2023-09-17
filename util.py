@@ -25,7 +25,7 @@ def get_config():
     config = json.load(f)
   return config
 
-def load_image(path, window, key, size=(100,100)):
+def load_image(path, window, key, size):
     try:
         img = Image.open(path)
         img.thumbnail(size)

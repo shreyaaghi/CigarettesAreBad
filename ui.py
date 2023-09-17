@@ -38,11 +38,13 @@ def ui():
       gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="left", size=size), # TODO Add scrollable back?
       gui.Column(quiz1Answers(), scrollable=True, visible = False, key = "answer screen 1", element_justification="c", size=size),
       gui.Column(about(), key="about screen", visible=False),
-      gui.Column(information(), key="information screen", scrollable=True, visible=False, element_justification="c", size=size)
+      gui.Column(information(), key="information screen", scrollable=True, visible=False, element_justification="left", size=size)
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
   while True:
+    image_list = ["images/cycleImages/anatomyOfACigarette.png", "images/cycleImages/whatIsvapeb.png"]
+
     evt, vals = window.read()
     if evt == gui.WIN_CLOSED:
       break
@@ -74,8 +76,9 @@ def ui():
       print(evt)
       webbrowser.open(evt.split(": ")[-1])
     handleQuiz1(evt, vals)
-    load_image("images/refusal.png", window, "img")
+    load_image("images/refusal.png", window, "img", (200,200))
     if evt == "Next Image":
+      load_image(image_list[1], window, "carousel1", (100,100))
       """
         TODO
         Take the next image from your list of images, feed that into 
