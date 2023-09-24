@@ -78,6 +78,7 @@ def ui():
       webbrowser.open(evt.split(": ")[-1])
     handleQuiz1(evt, vals)
     load_image("images/justSayNoFemale.png", window, "img", (200,200))
+    load_image("images/teenVapingRise.png", window, "img3", (400,400))
     load_image("images/what is in a cigarette.png", window, "img2", (400,400))
     load_image(image_list[next_index], window, "carousel1", (500,500))
     if evt == "Next Image Button":
