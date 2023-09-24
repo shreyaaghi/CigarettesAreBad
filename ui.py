@@ -9,7 +9,7 @@ from layouts.quiz1answers import quiz1Answers, checkQuiz1
 from layouts.about import about
 from layouts.information import information
 
-from util import get_config, load_image
+from util import get_config, load_image, convert_image
 
 config = get_config()
 
@@ -47,6 +47,9 @@ def ui():
     next_index = 0
 
     evt, vals = window.read()
+
+    
+
     if evt == gui.WIN_CLOSED:
       break
     if evt == "Information Button":
@@ -79,7 +82,16 @@ def ui():
     handleQuiz1(evt, vals)
     load_image("images/justSayNoFemale.png", window, "img", (200,200))
     load_image("images/teenVapingRise.png", window, "img3", (400,400))
-    load_image("images/what is in a cigarette.png", window, "img2", (400,400))
+    # load_image("images/what is in a cigarette.png", window, "img2", (400,400))
+    
+    img2 = window["img2"]
+    img2.draw_image(data=convert_image("images/cigarette_contents.png", (400,400)),location=(0,400))
+
+    if evt == "img2":
+      x, y = vals["img2"]
+      print(x,y)
+      
+
     load_image(image_list[next_index], window, "carousel1", (500,500))
     if evt == "Next Image Button":
       if next_index < len(image_list) - 1:

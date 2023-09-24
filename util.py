@@ -25,14 +25,20 @@ def get_config():
     config = json.load(f)
   return config
 
+
+def convert_image(path, size):
+   try:
+      img = Image.open(path)
+      img.thumbnail(size)
+      image_byte = io.BytesIO()
+      img.save(image_byte, format='PNG')
+      image_byte = image_byte.getvalue()
+      return image_byte
+   except:
+      print(f"Unable to open {path}!")
+
 def load_image(path, window, key, size):
-    try:
-        img = Image.open(path)
-        img.thumbnail(size)
-        image_byte = io.BytesIO()
-        img.save(image_byte, format='PNG')
-        image_byte = image_byte.getvalue()
-        window[key].update(data=image_byte)
-        return image_byte
-    except:
-        print(f"Unable to open {path}!")
+    image_byte = convert_image(path, size)
+    window[key].update(data=image_byte)
+    return image_byte
+    
