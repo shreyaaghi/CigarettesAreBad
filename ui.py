@@ -43,7 +43,8 @@ def ui():
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
   while True:
-    image_list = ["images/cycleImages/anatomyOfACigarette.png", "images/cycleImages/whatIsvapeb.png"]
+    image_list = ["images/anatomyOfACigarette.png", "images/whatIsvapeb.png"]
+    next_index = 0
 
     evt, vals = window.read()
     if evt == gui.WIN_CLOSED:
@@ -76,9 +77,18 @@ def ui():
       print(evt)
       webbrowser.open(evt.split(": ")[-1])
     handleQuiz1(evt, vals)
-    load_image("images/refusal.png", window, "img", (200,200))
-    if evt == "Next Image":
-      load_image(image_list[1], window, "carousel1", (100,100))
+    load_image("images/justSayNoFemale.png", window, "img", (200,200))
+    load_image("images/what is in a cigarette.png", window, "img2", (400,400))
+    load_image(image_list[next_index], window, "carousel1", (500,500))
+    if evt == "Next Image Button":
+      if next_index < len(image_list) - 1:
+        next_index = next_index + 1
+      load_image(image_list[next_index], window, "carousel1", (500,500))
+    if evt == "Previous Image Button":
+      if next_index > 0:
+        next_index = next_index - 1
+      load_image(image_list[next_index], window, "carousel1", (500,500))
+      
       """
         TODO
         Take the next image from your list of images, feed that into 
