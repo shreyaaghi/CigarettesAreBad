@@ -30,9 +30,15 @@ def convert_image(path, size):
    try:
       img = Image.open(path)
       img.thumbnail(size)
+
       image_byte = io.BytesIO()
-      img.save(image_byte, format='PNG')
+
+      new_image = Image.new("RGBA", size, "WHITE")
+      new_image.paste(img, (0, 0))
+      new_image.convert("RGB").save(image_byte, format="PNG")
+
       image_byte = image_byte.getvalue()
+
       return image_byte
    except:
       print(f"Unable to open {path}!")
