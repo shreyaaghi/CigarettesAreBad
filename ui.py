@@ -42,6 +42,7 @@ def ui():
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
+  cigarette_image = 'cigarette_contents'
   while True:
     image_list = ["images/anatomyOfACigarette.png", "images/whatIsvapeb.png"]
     next_index = 0
@@ -85,11 +86,19 @@ def ui():
     # load_image("images/what is in a cigarette.png", window, "img2", (400,400))
     
     img2 = window["img2"]
-    img2.draw_image(data=convert_image("images/cigarette_contents.png", (400,400)),location=(0,400))
+    # if cigarette_image == 'cigarette_contents':
+    img2.draw_image(data=convert_image(f"images/{cigarette_image}.png", (400,200)),location=(0,200))
 
     if evt == "img2":
       x, y = vals["img2"]
       print(x,y)
+      if 43 <= x <= 75:
+        if 193 <= y <= 199:
+          cigarette_image="brainDamage"
+      if 2 <= x <= 27:
+        if 192 <= y <= 199:
+          cigarette_image = "cigarette_contents"
+          # img2.draw_image(data=convert_image("images/brainDamage.png", (400,400)), location=(0,400))
       
 
     load_image(image_list[next_index], window, "carousel1", (500,500))

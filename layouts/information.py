@@ -26,7 +26,7 @@ def information():
         [gui.Text(" ")],
         [gui.Text(" ")],
         [gui.Text("What's Inside a Cigarette?", font=font)],
-        [gui.Multiline("A diagram of some of the most prevalent substances found in cigarettes is shown below. Nicotine is the most significant of all of them because it's the cause behind tobacco addiction. It releases dopamine, which is a neurotransmitter that can cause a temporary uplift in mood. These chemicals are just few of all 7,000 chemicals produced by cigarettes. Some of the other impactful substances not listed in the diagram are formaldehyde, which can increase the risk of heart disease, and tar, which damages your lungs and causes various breathing issues.", write_only = True, font=font, disabled=True, size = (width//20, 10)), gui.Graph(canvas_size = (400,400), graph_bottom_left = (0,0), graph_top_right = (400,400), change_submits = True, drag_submits=True, key="img2")] 
+        [gui.Multiline("A diagram of some of the most prevalent substances found in cigarettes is shown below. Nicotine is the most significant of all of them because it's the cause behind tobacco addiction. It releases dopamine, which is a neurotransmitter that can cause a temporary uplift in mood. These chemicals are just few of all 7,000 chemicals produced by cigarettes. Some of the other impactful substances not listed in the diagram are formaldehyde, which can increase the risk of heart disease, and tar, which damages your lungs and causes various breathing issues.", write_only = True, font=font, disabled=True, size = (width//20, 10)), gui.Graph(canvas_size = (400,200), graph_bottom_left = (0,0), graph_top_right = (400,200), change_submits = True, drag_submits=True, key="img2")] 
 
     ]
     return layout
