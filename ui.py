@@ -92,9 +92,59 @@ def ui():
     if evt == "img2":
       x, y = vals["img2"]
       print(x,y)
-      if 43 <= x <= 75:
-        if 193 <= y <= 199:
-          cigarette_image="brainDamage"
+      # dye
+      if 381 <= x <= 396:
+        if 47 <= y <= 77:
+          cigarette_image="dye"
+      # batteries
+      if 52 <= x <= 74:
+        if 191 <= y <= 198:
+          cigarette_image="batteries"
+      # tolune
+      if 244 <= x <= 279:
+        if 161 <= y <= 187:
+          cigarette_image="tolune"
+      # acetic acid
+      if 3 <= x <= 26:
+        if 72 <= y <= 100:
+          cigarette_image="acetic acid"
+      # bbq lighter
+      if 183 <= x <= 215:
+        if 122 <= y <= 147:
+          cigarette_image="bbq lighter"
+      # candle
+      if 48 <= x <= 66:
+        if 191 <= y <= 198:
+          cigarette_image="candle"
+      # carbonm
+      if 229 <= x <= 235:
+        if 47 <= y <= 57:
+          cigarette_image="carbonm"
+      # lighter fluid
+      if 3 <= x <= 22:
+        if 159 <= y <= 176:
+          cigarette_image="lighter fluid"
+      # nicotine
+      if 336 <= x <= 359:
+        if 155 <= y <= 175:
+          cigarette_image="nicotine"
+      # poison
+      if 139 <= x <= 173:
+        if 33 <= y <= 57:
+          cigarette_image="poison"
+      # rocket
+      if 311 <= x <= 348:
+        if 21 <= y <= 37:
+          cigarette_image="rocket"
+      # sewer
+      if 55 <= x <= 78:
+        if 52 <= y <= 78:
+          cigarette_image="sewer"
+      # toilet
+      if 364 <= x <= 388:
+        if 119 <= y <= 138:
+          cigarette_image="toilet"
+      # back button
       if 2 <= x <= 27:
         if 192 <= y <= 199:
           cigarette_image = "cigarette_contents"

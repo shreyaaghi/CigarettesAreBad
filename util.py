@@ -33,6 +33,7 @@ def convert_image(path, size):
 
       image_byte = io.BytesIO()
 
+# IMAGE TRANSPARENCY
       new_image = Image.new("RGBA", size, "WHITE")
       new_image.paste(img, (0, 0))
       new_image.convert("RGB").save(image_byte, format="PNG")
