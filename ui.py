@@ -83,6 +83,11 @@ def ui():
     handleQuiz1(evt, vals)
     load_image("images/justSayNoFemale.png", window, "img", (200,200))
     load_image("images/teenVapingRise.png", window, "img3", (400,400))
+    load_image("images/ads.png", window, "img4", (300,400))
+    load_image("images/jackie.png", window, "img5", (300,400))
+    load_image("images/healthy.png", window, "img6", (300,400))
+    load_image("images/organs!.png", window, "img7", (300,400))
+    load_image("images/secondhand.png", window, "img8", (300,400))
     # load_image("images/what is in a cigarette.png", window, "img2", (400,400))
     
     img2 = window["img2"]
@@ -96,10 +101,10 @@ def ui():
       if 381 <= x <= 396:
         if 47 <= y <= 77:
           cigarette_image="dye"
-      # batteries
-      if 52 <= x <= 74:
-        if 191 <= y <= 198:
-          cigarette_image="batteries"
+      # candle
+      if 113 <= x <= 135:
+        if 169 <= y <= 185:
+          cigarette_image="candle"
       # tolune
       if 244 <= x <= 279:
         if 161 <= y <= 187:
@@ -112,13 +117,13 @@ def ui():
       if 183 <= x <= 215:
         if 122 <= y <= 147:
           cigarette_image="bbq lighter"
-      # candle
+      # batteries
       if 48 <= x <= 66:
         if 191 <= y <= 198:
-          cigarette_image="candle"
+          cigarette_image="batteries"
       # carbonm
-      if 229 <= x <= 235:
-        if 47 <= y <= 57:
+      if 229 <= x <= 256:
+        if 42 <= y <= 59:
           cigarette_image="carbonm"
       # lighter fluid
       if 3 <= x <= 22:
@@ -151,15 +156,15 @@ def ui():
           # img2.draw_image(data=convert_image("images/brainDamage.png", (400,400)), location=(0,400))
       
 
-    load_image(image_list[next_index], window, "carousel1", (500,500))
+    load_image(image_list[next_index], window, "carousel1", (500,300))
     if evt == "Next Image Button":
       if next_index < len(image_list) - 1:
         next_index = next_index + 1
-      load_image(image_list[next_index], window, "carousel1", (500,500))
+      load_image(image_list[next_index], window, "carousel1", (500,300))
     if evt == "Previous Image Button":
       if next_index > 0:
         next_index = next_index - 1
-      load_image(image_list[next_index], window, "carousel1", (500,500))
+      load_image(image_list[next_index], window, "carousel1", (500,300))
       
       """
         TODO
