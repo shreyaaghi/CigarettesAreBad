@@ -37,12 +37,13 @@ def ui():
       gui.Column(quizzes_ui(), scrollable=False, visible = False, key = "quizzes screen", element_justification="c"),
       gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="left", size=size), # TODO Add scrollable back?
       gui.Column(quiz1Answers(), scrollable=True, visible = False, key = "answer screen 1", element_justification="c", size=size),
-      gui.Column(about(), key="about screen", visible=False),
+      gui.Column(about(), key="about screen", visible=False, element_justification='c'),
       gui.Column(information(), key="information screen", scrollable=True, visible=False, element_justification="left", size=size)
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
   cigarette_image = 'cigarette_contents'
+
   while True:
     image_list = ["images/anatomyOfACigarette.png", "images/whatIsvapeb.png"]
     next_index = 0
@@ -90,6 +91,7 @@ def ui():
     load_image("images/secondhand.png", window, "img8", (500,500))
     load_image("images/brainDamage.png", window, "img9", (500,500))
     load_image("images/college.png", window, "img10", (500,600))
+    load_image("images/bioImage.png", window, "img11", (700,700))
     # load_image("images/what is in a cigarette.png", window, "img2", (400,400))
     
     img2 = window["img2"]
@@ -100,20 +102,20 @@ def ui():
       x, y = vals["img2"]
       print(x,y)
       # dye
-      if 381 <= x <= 396:
-        if 47 <= y <= 77:
+      if 480 <= x <= 492:
+        if 73 <= y <= 107:
           cigarette_image="dye"
       # candle
-      if 113 <= x <= 135:
-        if 169 <= y <= 185:
+      if 56 <= x <= 91:
+        if 248 <= y <= 261:
           cigarette_image="candle"
       # tolune
-      if 244 <= x <= 279:
-        if 161 <= y <= 187:
+      if 302 <= x <= 344:
+        if 218 <= y <= 246:
           cigarette_image="tolune"
       # acetic acid
-      if 3 <= x <= 26:
-        if 72 <= y <= 100:
+      if 1 <= x <= 27:
+        if 105 <= y <= 139:
           cigarette_image="acetic acid"
       # bbq lighter
       if 183 <= x <= 215:
@@ -152,8 +154,8 @@ def ui():
         if 119 <= y <= 138:
           cigarette_image="toilet"
       # back button
-      if 2 <= x <= 27:
-        if 192 <= y <= 199:
+      if 4 <= x <= 8:
+        if 282 <= y <= 285:
           cigarette_image = "cigarette_contents"
           # img2.draw_image(data=convert_image("images/brainDamage.png", (400,400)), location=(0,400))
       
