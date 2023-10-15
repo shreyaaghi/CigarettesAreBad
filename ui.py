@@ -32,7 +32,7 @@ def ui():
   
   layout = [
     [
-      gui.Column(welcome(), key = "welcome screen"), 
+      gui.Column(welcome(), key = "welcome screen", element_justification="c"), 
       gui.Column(resources_ui(), scrollable=True, visible = False,  key = "resources screen", size=size),
       gui.Column(quizzes_ui(), scrollable=False, visible = False, key = "quizzes screen", element_justification="c"),
       gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="left", size=size), # TODO Add scrollable back?
@@ -81,19 +81,20 @@ def ui():
       print(evt)
       webbrowser.open(evt.split(": ")[-1])
     handleQuiz1(evt, vals)
-    load_image("images/justSayNoFemale.png", window, "img", (200,200))
-    load_image("images/teenVapingRise.png", window, "img3", (400,400))
+    load_image("images/justSayNoFemale.png", window, "img", (300,300))
+    load_image("images/teenVapingRise.png", window, "img3", (500,500))
     load_image("images/ads.png", window, "img4", (300,400))
     load_image("images/jackie.png", window, "img5", (300,400))
     load_image("images/healthy.png", window, "img6", (300,400))
-    load_image("images/organs!.png", window, "img7", (300,400))
-    load_image("images/secondhand.png", window, "img8", (300,400))
-    load_image("images/brainDamage.png", window, "img9", (300,400))
+    load_image("images/organs!.png", window, "img7", (500,500))
+    load_image("images/secondhand.png", window, "img8", (500,500))
+    load_image("images/brainDamage.png", window, "img9", (500,500))
+    load_image("images/college.png", window, "img10", (500,600))
     # load_image("images/what is in a cigarette.png", window, "img2", (400,400))
     
     img2 = window["img2"]
     # if cigarette_image == 'cigarette_contents':
-    img2.draw_image(data=convert_image(f"images/{cigarette_image}.png", (400,200)),location=(0,200))
+    img2.draw_image(data=convert_image(f"images/{cigarette_image}.png", (500,300)),location=(0,300))
 
     if evt == "img2":
       x, y = vals["img2"]
@@ -157,15 +158,15 @@ def ui():
           # img2.draw_image(data=convert_image("images/brainDamage.png", (400,400)), location=(0,400))
       
 
-    load_image(image_list[next_index], window, "carousel1", (500,300))
+    load_image(image_list[next_index], window, "carousel1", (600,400))
     if evt == "Next Image Button":
       if next_index < len(image_list) - 1:
         next_index = next_index + 1
-      load_image(image_list[next_index], window, "carousel1", (500,300))
+      load_image(image_list[next_index], window, "carousel1", (600,400))
     if evt == "Previous Image Button":
       if next_index > 0:
         next_index = next_index - 1
-      load_image(image_list[next_index], window, "carousel1", (500,300))
+      load_image(image_list[next_index], window, "carousel1", (600,400))
       
       """
         TODO
