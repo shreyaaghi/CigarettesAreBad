@@ -8,6 +8,7 @@ from layouts.quiz1 import quiz1, handleQuiz1
 from layouts.quiz1answers import quiz1Answers, checkQuiz1
 from layouts.about import about
 from layouts.information import information
+from layouts.sources import sources
 
 from util import get_config, load_image, convert_image
 
@@ -19,7 +20,7 @@ size = (config['width'], config['height'])
 
 
 def cycleLayout(window, activeLayout):
-  screens = ["welcome screen", "resources screen", "quizzes screen", "quiz1 screen", "answer screen 1", "about screen", "information screen"]
+  screens = ["welcome screen", "resources screen", "quizzes screen", "quiz1 screen", "answer screen 1", "about screen", "information screen", "sources screen"]
   window[activeLayout].update(visible = True)
   for screen in screens:
     if screen == activeLayout:
@@ -38,7 +39,8 @@ def ui():
       gui.Column(quiz1(), scrollable=True, visible = False, key = "quiz1 screen", element_justification="left", size=size), # TODO Add scrollable back?
       gui.Column(quiz1Answers(), scrollable=True, visible = False, key = "answer screen 1", element_justification="c", size=size),
       gui.Column(about(), key="about screen", visible=False, element_justification='c'),
-      gui.Column(information(), key="information screen", scrollable=True, visible=False, element_justification="left", size=size)
+      gui.Column(information(), key="information screen", scrollable=True, visible=False, element_justification="left", size=size),
+      gui.Column(sources(), key="sources screen", scrollable=True, visible=False, element_justification="left", size=size)
     ]
   ]
   window = gui.Window("TeenTobaccoTermination", layout, resizable=True, element_justification='c', size = size)
@@ -67,6 +69,7 @@ def ui():
       cycleLayout(window, "about screen")
       print("About Button Pressed")
     if evt == "Sources Button":
+      cycleLayout(window, "sources screen")
       print("Sources Button Pressed")
     if "Back Button" in evt: 
       cycleLayout(window, "welcome screen")

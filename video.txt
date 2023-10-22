@@ -1,0 +1,16 @@
+1. Story Telling
+-what is it
+-what is it for
+-why?
+-who is the intended audience?
+
+2. demo
+-how does it work?
+-show the functionality
+
+3. code
+-explain the code
+
+4. conclude
+
+3 minute limit
