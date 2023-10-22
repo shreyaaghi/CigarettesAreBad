@@ -1,7 +1,5 @@
 from PIL import Image
 import PySimpleGUI as gui
-import io
-import os
 from util import get_config
 
 config = get_config()
