@@ -105,20 +105,20 @@ def ui():
       x, y = vals["img2"]
       print(x,y)
       # dye
-      if 480 <= x <= 492:
-        if 73 <= y <= 107:
+      if 481 <= x <= 495:
+        if 110 <= y <= 138:
           cigarette_image="dye"
       # candle
-      if 56 <= x <= 91:
-        if 248 <= y <= 261:
+      if 144 <= x <= 177:
+        if 256 <= y <= 278:
           cigarette_image="candle"
       # tolune
-      if 302 <= x <= 344:
-        if 218 <= y <= 246:
+      if 304 <= x <= 349:
+        if 256 <= y <= 283:
           cigarette_image="tolune"
       # acetic acid
-      if 1 <= x <= 27:
-        if 105 <= y <= 139:
+      if 2 <= x <= 26:
+        if 146 <= y <= 167:
           cigarette_image="acetic acid"
       # bbq lighter
       if 183 <= x <= 215:
@@ -157,8 +157,8 @@ def ui():
         if 119 <= y <= 138:
           cigarette_image="toilet"
       # back button
-      if 4 <= x <= 8:
-        if 282 <= y <= 285:
+      if 2 <= x <= 32:
+        if 283 <= y <= 298:
           cigarette_image = "cigarette_contents"
           # img2.draw_image(data=convert_image("images/brainDamage.png", (400,400)), location=(0,400))
       
