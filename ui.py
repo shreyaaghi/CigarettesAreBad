@@ -117,44 +117,44 @@ def ui():
         if 256 <= y <= 283:
           cigarette_image="tolune"
       # acetic acid
-      if 2 <= x <= 26:
-        if 146 <= y <= 167:
+      if 2 <= x <= 27:
+        if 142 <= y <= 172:
           cigarette_image="acetic acid"
       # bbq lighter
-      if 183 <= x <= 215:
-        if 122 <= y <= 147:
+      if 229 <= x <= 261:
+        if 204 <= y <= 230:
           cigarette_image="bbq lighter"
       # batteries
-      if 48 <= x <= 66:
-        if 191 <= y <= 198:
+      if 61 <= x <= 94:
+        if 283 <= y <= 297:
           cigarette_image="batteries"
       # carbonm
-      if 229 <= x <= 256:
-        if 42 <= y <= 59:
+      if 287 <= x <= 319:
+        if 101 <= y <= 124:
           cigarette_image="carbonm"
       # lighter fluid
-      if 3 <= x <= 22:
-        if 159 <= y <= 176:
+      if 2 <= x <= 28:
+        if 243 <= y <= 267:
           cigarette_image="lighter fluid"
       # nicotine
-      if 336 <= x <= 359:
-        if 155 <= y <= 175:
+      if 422 <= x <= 453:
+        if 240 <= y <= 267:
           cigarette_image="nicotine"
       # poison
-      if 139 <= x <= 173:
-        if 33 <= y <= 57:
+      if 171 <= x <= 216:
+        if 92 <= y <= 121:
           cigarette_image="poison"
       # rocket
-      if 311 <= x <= 348:
-        if 21 <= y <= 37:
+      if 394 <= x <= 430:
+        if 72 <= y <= 91:
           cigarette_image="rocket"
       # sewer
-      if 55 <= x <= 78:
-        if 52 <= y <= 78:
+      if 70 <= x <= 102:
+        if 113 <= y <= 145:
           cigarette_image="sewer"
       # toilet
-      if 364 <= x <= 388:
-        if 119 <= y <= 138:
+      if 457 <= x <= 488:
+        if 197 <= y <= 222:
           cigarette_image="toilet"
       # back button
       if 2 <= x <= 32:
