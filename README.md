@@ -2,9 +2,12 @@ To view my code, use the left hand bar and select any of the ".py" or ".json" fi
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 App: Teen Tobacco Termination 
+
 Winner of the Congressional App Challenge
 
+
 Language: Python
+
 Key libraries employed: PySimpleGui, Pillow
 
 Key Concepts: 
@@ -14,7 +17,7 @@ Key Concepts:
 - Window Management
 - Event Loops & Handling
 
-Date: July-October 2023
+Date: June-October 2023
 ------------------------------
 
 Purpose: To inform teenagers and their families about tobacco use
