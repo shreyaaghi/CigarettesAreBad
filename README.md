@@ -1,10 +1,7 @@
 To view my code, use the left hand bar and select any of the ".py" or ".json" files (ex. main.py, ui.py, util.py, or all content in the links and layouts folders)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-App: Teen Tobacco Termination 
-
-Winner of the Congressional App Challenge
-
+App: Teen Tobacco Termination (Winner of the Congressional App Challenge)
 
 Language: Python
 
