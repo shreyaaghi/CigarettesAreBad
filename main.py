@@ -3,4 +3,4 @@ ui()
 
 # from util import get_resources
 
-# print(get_resources()['contacts'])
+# (get_resources()['contacts'])

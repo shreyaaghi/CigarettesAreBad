@@ -7,7 +7,6 @@ width, height = config['width'], config['height']
 
 def sources():
     citations = get_citations()
-    print(citations)
     font = ("Helvetica", 20)
     layout = [
     [gui.Button("Back", key="Sources Back Button"), gui.Text("Sources:",font=('Helvetica', 40))], 
