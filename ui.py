@@ -94,7 +94,7 @@ def ui():
     load_image("images/secondhand.png", window, "img8", (500,500))
     load_image("images/brainDamage.png", window, "img9", (500,500))
     load_image("images/college.png", window, "img10", (500,600))
-    load_image("images/bioImage.png", window, "img11", (200,200))
+    load_image("images/schoolFlick.jpg", window, "img11", (200,200))
     # load_image("images/what is in a cigarette.png", window, "img2", (400,400))
     
     img2 = window["img2"]
